@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mern-rtchat-app/static/css/main.9c5c5444.css",
+    "main.js": "/mern-rtchat-app/static/js/main.acb23677.js",
+    "index.html": "/mern-rtchat-app/index.html",
+    "main.9c5c5444.css.map": "/mern-rtchat-app/static/css/main.9c5c5444.css.map",
+    "main.acb23677.js.map": "/mern-rtchat-app/static/js/main.acb23677.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c5c5444.css",
+    "static/js/main.acb23677.js"
+  ]
+}
