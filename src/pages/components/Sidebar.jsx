@@ -6,8 +6,10 @@ import Profile from "./Profile";
 const Sidebar = () => {
     return (
         <div className="sidebar">
-            <label>chat</label>
+            <label>rtchat</label>
             <Search />
+            <Userchat />
+            <Userchat />
             <Userchat />
             <Profile />
         </div>

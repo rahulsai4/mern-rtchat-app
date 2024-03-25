@@ -1,7 +1,8 @@
-$outer: #a7bcff;
+$outer: #464866;
 $inner: white;
-$sidebar: rgb(13, 13, 51);
-$chat: white;
+$sidebar: #190061;
+$chat: #0c0032;
+
 .homeContainer {
     display: flex;
     flex-direction: column;
@@ -18,27 +19,87 @@ $chat: white;
         background-color: $inner;
         width: 60%;
         height: 70%;
-        border-radius: 15px;
+        border-radius: 20px;
+        overflow: none;
 
         .sidebar {
             background-color: $sidebar;
-            flex: 1;
+            width: 25%;
             color: white;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            padding: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            label {
+                font-weight: bold;
+                text-align: center;
+            }
 
             input {
-                flex: 1;
-                background-color: $sidebar;
-                color: white;
+                background-color: transparent;
+                color: $inner;
                 border: none;
-                border-bottom: 3px solid $outer;
+                border-bottom: 1px solid $outer;
+                padding: 10px;
+                width: 100%;
+            }
+
+            .userchat {
+                flex: 0.5;
+                width: 100%;
+                display: flex;
+                justify-content: start;
+                max-height: 50px;
+                padding: 10px;
+                img {
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .content {
+                    font-size: 20px;
+                    padding-left: 10px;
+
+                    span {
+                        font-weight: bold;
+                    }
+
+                    p {
+                        color: lightgray;
+                    }
+                }
+
+                &:hover {
+                    background-color: $chat;
+                }
+            }
+            .profile {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin-top: auto;
+                height: 50px;
+                img {
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                span {
+                    font-weight: bold;
+                }
+                button {
+                    padding: 5px;
+                    cursor: pointer;
+                }
             }
         }
         .chat {
             background-color: $chat;
+            color: $inner;
             flex: 2;
         }
     }
@@ -74,13 +135,14 @@ $chat: white;
         input {
             padding: 10px;
             border: none;
-            border-bottom: 3px solid $outer;
+            border-bottom: 1px solid $outer;
             width: 80%;
             background-color: $inner;
         }
 
         .formButton {
             background-color: $outer;
+            color: $inner;
             padding: 15px 30px;
             margin: 20px;
             border: none;
@@ -100,4 +162,7 @@ body {
 }
 input {
     outline: none;
+}
+p {
+    margin: 0px;
 }

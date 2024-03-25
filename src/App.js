@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 export default function Square() {
     return (
         <>
-            <Signin />
+            <Home />
         </>
     );
 }
